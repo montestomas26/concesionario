@@ -1,0 +1,111 @@
+/* Reset de márgenes, rellenos y tamaño del cuadro */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Estilo de la caja del formulario */
+.box {
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    max-width: 100%;
+}
+
+/* Línea de borde en la parte superior de la caja */
+.borderLine {
+    height: 6px;
+    width: 50%;
+    background-color: #28a745;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Estilo del título dentro de la caja */
+.box h2 {
+    color: #28a745;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* Estilo para los campos de entrada */
+.inputBox {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+/* Estilo para los campos de entrada */
+.inputBox input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fafafa;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Estilo al enfocar el campo de entrada */
+.inputBox input:focus {
+    border-color: #28a745;
+    background-color: #ffffff;
+}
+
+/* Estilo para la etiqueta flotante en el campo de entrada */
+.inputBox span {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: #aaa;
+    font-size: 18px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/* Estilo para la etiqueta flotante cuando el campo de entrada está enfocado o tiene valor */
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span {
+    top: -20px;
+    left: 8px;
+    color: #28a745;
+    font-size: 14px;
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Estilo para el botón al pasar el cursor sobre él */
+button:hover {
+    background-color: #218838;
+    transform: scale(1.02);
+}

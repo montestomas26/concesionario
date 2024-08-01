@@ -1,0 +1,166 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #4a4a4a;
+  color: rgb(230, 198, 21);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #131312;
+  padding: 15px 0;
+}
+
+.navbar .logo {
+  color: rgb(223, 238, 14);
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  float: right;
+}
+
+.navbar .nav-links a {
+  color: rgb(208, 243, 7);
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://www.infozona.com.ar/wp-content/uploads/2022/06/plan-mi-moto-2022-precios-1200x900.jpg")
+    no-repeat center;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 9.375em 0;
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 2;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* Servicios Section */
+.servicios {
+  padding: 60px 0;
+  background-color: rgb(17, 1, 1);
+  color: rgb(219, 241, 14);
+}
+
+.servicios h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+}
+
+.service .icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.service p {
+  font-size: 16px;
+}
+
+/* Tarjetas Section */
+.tarjetas {
+  padding: 60px 0;
+}
+
+.tarjetas h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  background-color: #0c0603;
+  color: rgb(233, 236, 7);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
